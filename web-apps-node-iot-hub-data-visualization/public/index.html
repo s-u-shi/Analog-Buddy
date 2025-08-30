@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/chart-device-data.js" type="text/javascript" charset="utf-8"></script>
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Analog Buddy</title>
+</head>
+
+<body>
+    <div class="container text-centers">
+        <div class="row">
+            <div class="col-3">
+                <!-- Intentially left blank -->
+            </div>
+            <div class="col-6 header">
+                <div class="title">Analog Buddy</div>
+                <!-- <span>Analog Buddy</span> -->
+                <img src="Analog TV.svg" alt="Analog TV Icon" id="tv">
+            </div>
+            <div class="col-3">
+                <!-- Intentially left blank -->
+            </div>
+        </div>
+        <div class="col text-start devices">
+            <span id="deviceCount">0 devices</span>
+            <select id="listOfDevices" class="select_box"></select>
+        </div>
+    </div>
+
+    <div class="container text-center smallData">
+        <div class="row align-items-start">
+            <div class="col">
+                <div class="card" id="temperature">
+                    <div class="card-body">
+                        <h5 class="card-title">Temperature</h5>
+                    </div>
+                    <!-- Chart (Temperature) -->
+                    <canvas id="tempDoughnut"></canvas>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" id="humidity">
+                    <div class="card-body">
+                        <h5 class="card-title">Humidity</h5>
+                    </div>
+                    <!-- Chart (Humidity) -->
+                    <canvas id="humDoughnut"></canvas>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" id="brightness">
+                    <div class="card-body">
+                        <h5 class="card-title">Brightness</h5>
+                    </div>
+                    <!-- Chart (Brightness) -->
+                    <canvas id="brightDoughnut"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="card" id="fullChart">
+                    <canvas id="iotChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

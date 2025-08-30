@@ -1,0 +1,70 @@
+body {
+  padding: 2%;
+  margin: 0;
+  text-align: center;
+  color: #EAE3D2;
+  background-color: #3B3B3B;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  margin-top: auto;  
+  font-size: 250%;
+  padding-right: 3%;
+}
+
+#tv {
+  width: 20%;
+}
+
+.devices {
+  padding-bottom: 1%;
+}
+
+.select_box {
+  color: #2B2F28;
+  border-radius: 0.375rem;
+  background-color: #EAE3D2;
+}
+
+.card {
+  cursor: pointer;
+  color: #2B2F28;
+  background-color: #EAE3D2;
+  transition: box-shadow 0.2s;
+  border-width: 0.15vw;
+}
+
+#temperature:hover {
+  box-shadow: 8px 8px 8px #D94141;
+}
+
+#humidity:hover {
+  box-shadow: 8px 8px 8px #00B7C2;
+}
+
+#brightness:hover {
+  box-shadow: 8px 8px 8px #F2A900;
+}
+
+.card-body {
+  padding-bottom: 0%;
+}
+
+.smallData {
+  padding-bottom: 2%;
+}
+
+#fullChart:hover {
+  box-shadow: 8px 8px 8px #AAAAAA;
+}
+
+#fullChart {
+  padding-top: 2%;
+}
+
